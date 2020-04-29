@@ -4,5 +4,6 @@ branches:
 - master
 projects:
   RGBArmor:
+    icon: RGBArmor.png
     path: ""
 ...
