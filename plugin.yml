@@ -3,13 +3,11 @@ name: RGBArmor
 description: Color your armor with RGB codes!
 version: 1.0.0
 api: 3.0.0
-
 libs:
   format: virion
   vendor: poggit-project
   src: jojoe77777/FormAPI/libFormAPI
   version: 1.3.0
-
 commands:
   makearmor:
     permission: makearmor.use
