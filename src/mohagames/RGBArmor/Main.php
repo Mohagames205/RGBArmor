@@ -3,6 +3,8 @@
 namespace mohagames\RGBArmor;
 
 
+use jojoe77777\FormAPI\CustomForm;
+use jojoe77777\FormAPI\SimpleForm;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
@@ -11,8 +13,6 @@ use pocketmine\item\ItemIds;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Color;
-use poggit\jojoe77777\FormAPI\CustomForm;
-use poggit\jojoe77777\FormAPI\SimpleForm;
 
 
 class Main extends PluginBase implements Listener
@@ -120,6 +120,8 @@ class Main extends PluginBase implements Listener
     public function makeChest(array $array, $player)
     {
         list($r, $g, $b) = $array;
+
+
         $item = Item::get(ItemIds::LEATHER_CHESTPLATE);
         $item->setCustomColor(new Color($r, $g, $b));
         $player->getInventory()->addItem($item);
